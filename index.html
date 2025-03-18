@@ -169,19 +169,50 @@
     <hr>
 
     <h2>7. CSS (Cascading Style Sheets)</h2>
+    <p>Dapat digunakan untuk mengubah warna bg, warba font, jenis font, serta ukuran font
+      (seperti style).</p>
     <h3>Contoh Pertama - Inline CSS</h3>
     <h4 style="color:salmon;">Heading merah </h4>
     <p style="color:SlateBlue;">Paragraf ungu.</p>
     <hr>
     <h3>Contoh Kedua - Internal CSS</h3>
+    <p>Format CSS diletakan di bagian head.</p>
+    <!-- Contoh : 
     <style>
-    h4 {color:salmon;}
+    body {background-color:LightYellow;}
+    h1 {color:salmon;}
     p {color:SlateBlue;}  
     </style>
-    <h4>Heading merah</h4>
-    <p> Paragraf ungu.</p>
+    Maka seluruh bagian dalam <body>, <h1> dan <p> akan mengikuti <style> -->
+    <hr>
     <h3>Contoh Ketiga - External CSS</h3>
-    <p>yooooooooooooo</p>
+    <p>Format CSS dengan menghubungkannya dengan format style CSS di file lain dengan link 
+      (diletakan di bagian head).</p>
+    <!-- Contoh : 
+    <link rel="stylesheet" href="styles.css"> 
+    dengan file styles.css sebagai berikut : 
+        body {background-color:LightYellow;}
+        h1 {color:salmon;}
+        p {color:SlateBlue;}  
+    Seluruh bagian dalam <body>, <h1> dan <p> akan mengikuti styles.css -->
+
+    <hr>
+
+    <h2>8. Links</h2>
+    <h3>Contoh Pertama - Syntax</h3>
+    <p>Contoh link:<a href="https://youtu.be/dQw4w9WgXcQ?si=d2pwzQlZ0K4s6ifT"> https://youtu.be/dQw4w9WgXcQ?si=d2pwzQlZ0K4s6ifT</a></p>
+    <hr>
+    <h3>Contoh Kedua - Target Attribute</h3>
+    <p>Contoh (self):<a href="https://youtu.be/fC7oUOUEEi4?si=UZO23_CPMfScc5iS" target="_self"> Link 1</a></p>
+    <p>Contoh (blank):<a href="https://youtu.be/774cmvDHB5s?si=4sLWViixSTYu0jqJ" target="_blank"> Link 2</a></p>
+    <p>Contoh (parent):<a href="https://youtu.be/se5S1r2lpWY?si=HGh8YGqyd0DQ94_M" target="_parent"> Link 3</a></p>
+    <p>Contoh (top):<a href="https://youtu.be/ab1se0dkeCU?si=wKgSH8lCi7v34DHy" target="_top"> Link 4</a></p>
+    <hr>
+    <h3>Contoh Ketiga - Absolute URL & Relative URL</h3>
+    <h4>Absolute URL</h4>
+    <p><a href="https://htmlcolorcodes.com/color-names/">Berisi website address.</p>
+    <p><a href="">Masih dalam file yang sama.</p>
+
     
   </body>
 </html>
